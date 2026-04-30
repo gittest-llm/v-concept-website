@@ -15,6 +15,7 @@ const mimeTypes = {
   ".jpeg": "image/jpeg",
   ".png": "image/png",
   ".svg": "image/svg+xml",
+  ".otf": "font/otf",
   ".ico": "image/x-icon"
 };
 

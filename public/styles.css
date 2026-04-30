@@ -13,6 +13,70 @@
   --shadow: 0 18px 48px rgba(80, 53, 35, 0.22);
 }
 
+@font-face {
+  font-family: "SVN Gilroy";
+  src: url("assets/fonts/SVN-Gilroy-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN Gilroy";
+  src: url("assets/fonts/SVN-Gilroy-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN Gilroy";
+  src: url("assets/fonts/SVN-Gilroy-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN Gilroy";
+  src: url("assets/fonts/SVN-Gilroy-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN Gilroy";
+  src: url("assets/fonts/SVN-Gilroy-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN Gilroy";
+  src: url("assets/fonts/SVN-Gilroy-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN Gilroy";
+  src: url("assets/fonts/SVN-Gilroy-XBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN Gilroy";
+  src: url("assets/fonts/SVN-Gilroy-Heavy.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -28,7 +92,7 @@ body {
     url("assets/texture-bg.jpg") center / cover fixed,
     var(--paper);
   color: var(--brown-900);
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "SVN Gilroy", "SVN-Gilroy", "Segoe UI", Arial, sans-serif;
   line-height: 1.45;
   letter-spacing: 0;
 }
