@@ -1,6 +1,7 @@
 const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
+const introLoader = document.querySelector("[data-intro-loader]");
 const navLinks = [...document.querySelectorAll(".site-nav a")];
 const revealNodes = document.querySelectorAll(".reveal");
 const countNodes = document.querySelectorAll("[data-count]");
@@ -20,6 +21,14 @@ function bootIcons() {
 
 bootIcons();
 window.addEventListener("load", bootIcons);
+
+if (introLoader) {
+  document.body.classList.add("intro-active");
+  window.setTimeout(() => {
+    introLoader.classList.add("is-hidden");
+    document.body.classList.remove("intro-active");
+  }, 2450);
+}
 
 function syncHeader() {
   header?.classList.toggle("is-scrolled", window.scrollY > 24);

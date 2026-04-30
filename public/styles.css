@@ -37,6 +37,10 @@ body.nav-open {
   overflow: hidden;
 }
 
+body.intro-active {
+  overflow: hidden;
+}
+
 button,
 input,
 textarea {
@@ -60,6 +64,60 @@ img {
 .container {
   width: min(1238px, calc(100% - 40px));
   margin-inline: auto;
+}
+
+.intro-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(254, 213, 167, 0.18), transparent 28%),
+    linear-gradient(135deg, var(--brown-900), var(--brown-700));
+  color: var(--cream-100);
+  pointer-events: auto;
+  animation: intro-shell 2400ms cubic-bezier(0.7, 0, 0.25, 1) forwards;
+}
+
+.intro-loader.is-hidden {
+  display: none;
+}
+
+.intro-card {
+  display: grid;
+  justify-items: center;
+  gap: 13px;
+  transform: translateY(10px);
+  animation: intro-card 1900ms ease forwards;
+}
+
+.intro-mark {
+  display: grid;
+  width: 74px;
+  height: 74px;
+  place-items: center;
+  border: 1px solid rgba(254, 213, 167, 0.72);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(254, 213, 167, 0.26);
+  font-family: Georgia, serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  animation: intro-pulse 1500ms ease-out infinite;
+}
+
+.intro-card p {
+  margin: 8px 0 0;
+  color: rgba(254, 213, 167, 0.78);
+  font-size: 1.05rem;
+  font-weight: 650;
+}
+
+.intro-card strong {
+  color: var(--cream-100);
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  line-height: 0.95;
+  text-transform: lowercase;
 }
 
 .site-header {
@@ -795,6 +853,49 @@ img {
   transform: translateY(0);
 }
 
+@keyframes intro-shell {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  72% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes intro-card {
+  0% {
+    opacity: 0;
+    transform: translateY(22px) scale(0.96);
+    filter: blur(10px);
+  }
+  22%,
+  72% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.98);
+    filter: blur(4px);
+  }
+}
+
+@keyframes intro-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(254, 213, 167, 0.25);
+  }
+  100% {
+    box-shadow: 0 0 0 26px rgba(254, 213, 167, 0);
+  }
+}
+
 @media (max-width: 1120px) {
   .site-header {
     grid-template-columns: 170px 1fr 48px;
@@ -998,5 +1099,9 @@ img {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+
+  .intro-loader {
+    animation-duration: 900ms !important;
   }
 }
