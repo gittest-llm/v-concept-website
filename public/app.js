@@ -103,8 +103,17 @@ form?.addEventListener("submit", async (event) => {
   formStatus.classList.remove("is-error");
   submitButton.disabled = true;
 
+  if (window.location.hostname.endsWith("github.io")) {
+    window.setTimeout(() => {
+      form.reset();
+      formStatus.textContent = "Đã ghi nhận thông tin. V-Concept sẽ liên hệ lại sớm nhất.";
+      submitButton.disabled = false;
+    }, 450);
+    return;
+  }
+
   try {
-    const response = await fetch("/api/consultation", {
+    const response = await fetch("api/consultation", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)

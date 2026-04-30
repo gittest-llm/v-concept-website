@@ -25,7 +25,7 @@ body {
   margin: 0;
   background:
     linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)),
-    url("/assets/texture-bg.jpg") center / cover fixed,
+    url("assets/texture-bg.jpg") center / cover fixed,
     var(--paper);
   color: var(--brown-900);
   font-family: "Segoe UI", Arial, sans-serif;
@@ -248,7 +248,7 @@ img {
 .projects-section {
   background:
     linear-gradient(rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.68)),
-    url("/assets/texture-bg.jpg") center / cover,
+    url("assets/texture-bg.jpg") center / cover,
     var(--paper);
 }
 
