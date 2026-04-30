@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="V-Concept - thiết kế và thi công nội thất, kiến trúc trọn gói cho chung cư, nhà phố, biệt thự và văn phòng."
+    />
+    <title>V-Concept | Thiết kế nội thất</title>
+    <link rel="preload" as="image" href="/assets/hero-living.jpg" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="V-Concept">
+        <span class="brand-symbol">V</span>
+        <span>
+          <strong>V-CONCEPT</strong>
+          <small>Interior architecture</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Điều hướng chính" data-nav>
+        <a href="#top">Trang chủ</a>
+        <a href="#about">Về chúng tôi</a>
+        <a href="#process">Quy trình làm việc</a>
+        <a href="#projects">Dự án</a>
+        <a href="#news">Tin tức</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+
+      <button class="search-button" type="button" aria-label="Tìm kiếm">
+        <i data-lucide="search" aria-hidden="true"></i>
+      </button>
+      <button class="menu-button" type="button" aria-label="Mở menu" aria-expanded="false" data-menu-toggle>
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Không gian nội thất V-Concept">
+        <img class="hero-image" src="/assets/hero-living.jpg" alt="Không gian phòng khách hiện đại do V-Concept thiết kế" />
+      </section>
+
+      <section class="intro-band" id="about">
+        <div class="container">
+          <p class="intro-copy reveal">
+            <strong>V - Concept</strong> là đối tác tin cậy trong thiết kế và thi công nội thất, với kinh nghiệm và quy trình chuyên nghiệp.
+            Mỗi dự án được chăm chút, đảm bảo thẩm mỹ, công năng và chất lượng bền vững.
+          </p>
+
+          <div class="stats-panel reveal" aria-label="Số liệu V-Concept">
+            <article>
+              <strong><span data-count="10">0</span>+</strong>
+              <h2>Kinh nghiệm</h2>
+              <p>Trong lĩnh vực thiết kế và thi công nội thất, kiến trúc trọn gói.</p>
+            </article>
+            <article>
+              <strong><span data-count="1200">0</span>+</strong>
+              <h2>Khách hàng</h2>
+              <p>Có phản hồi tốt và hài lòng với chất lượng dịch vụ.</p>
+            </article>
+            <article>
+              <strong><span data-count="30">0</span>+</strong>
+              <h2>Đối tác</h2>
+              <p>Đến từ các thương hiệu uy tín với đa dạng lĩnh vực khác nhau.</p>
+            </article>
+            <article>
+              <strong><span data-count="1000">0</span>+</strong>
+              <h2>Dự án</h2>
+              <p>Với đa dạng quy mô: chung cư, nhà phố, biệt thự, văn phòng.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Dự án nổi bật</h2>
+            <div class="project-tabs" role="tablist" aria-label="Danh mục dự án">
+              <button class="is-active" type="button" data-filter="all">Nổi bật</button>
+              <button type="button" data-filter="apartment">Chung cư</button>
+              <button type="button" data-filter="townhouse">Nhà phố</button>
+              <button type="button" data-filter="villa">Biệt thự</button>
+              <button type="button" data-filter="office">Văn phòng</button>
+              <button type="button" data-filter="actual">Công trình thực tế</button>
+            </div>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal" data-category="apartment">
+              <img src="/assets/project-living.jpg" alt="Dự án Vinhomes Ocean Park 2" />
+              <h3>Dự án Vinhomes Ocean Park 2</h3>
+            </article>
+            <article class="project-card reveal" data-category="villa">
+              <img src="/assets/project-living.jpg" alt="Dự án biệt thự ven hồ" />
+              <h3>Dự án biệt thự ven hồ</h3>
+            </article>
+            <article class="project-card reveal" data-category="townhouse">
+              <img src="/assets/project-living.jpg" alt="Dự án nhà phố Long Biên" />
+              <h3>Dự án nhà phố Long Biên</h3>
+            </article>
+            <article class="project-card reveal" data-category="apartment">
+              <img src="/assets/project-living.jpg" alt="Dự án căn hộ cao cấp" />
+              <h3>Dự án căn hộ cao cấp</h3>
+            </article>
+            <article class="project-card reveal" data-category="office">
+              <img src="/assets/project-living.jpg" alt="Dự án văn phòng sáng tạo" />
+              <h3>Dự án văn phòng sáng tạo</h3>
+            </article>
+            <article class="project-card reveal" data-category="actual">
+              <img src="/assets/project-living.jpg" alt="Công trình thực tế đã bàn giao" />
+              <h3>Công trình thực tế đã bàn giao</h3>
+            </article>
+            <article class="project-card reveal" data-category="villa">
+              <img src="/assets/project-living.jpg" alt="Dự án villa nghỉ dưỡng" />
+              <h3>Dự án villa nghỉ dưỡng</h3>
+            </article>
+            <article class="project-card reveal" data-category="townhouse">
+              <img src="/assets/project-living.jpg" alt="Dự án nhà phố hiện đại" />
+              <h3>Dự án nhà phố hiện đại</h3>
+            </article>
+            <article class="project-card reveal" data-category="actual">
+              <img src="/assets/project-living.jpg" alt="Dự án thi công nội thất trọn gói" />
+              <h3>Dự án thi công nội thất trọn gói</h3>
+            </article>
+          </div>
+
+          <a class="more-link reveal" href="#contact">
+            <span>Xem tất cả</span>
+            <i data-lucide="arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="section consult-section" id="process">
+        <div class="container consult-grid">
+          <div class="video-column reveal">
+            <h2>Video của chúng tôi</h2>
+            <button class="video-frame" type="button" aria-label="Phát video giới thiệu V-Concept" data-video-button>
+              <img src="/assets/hero-living.jpg" alt="Không gian nội thất dùng làm video giới thiệu" />
+              <span class="play-icon"><i data-lucide="play" aria-hidden="true"></i></span>
+            </button>
+            <div class="video-thumbs" aria-hidden="true">
+              <img src="/assets/hero-living.jpg" alt="" />
+              <img src="/assets/project-living.jpg" alt="" />
+              <img src="/assets/hero-living.jpg" alt="" />
+            </div>
+          </div>
+
+          <form class="consult-form reveal" data-consult-form>
+            <h2>Đăng ký tư vấn</h2>
+            <div class="form-grid">
+              <label>
+                Họ và tên
+                <input name="name" type="text" autocomplete="name" required />
+              </label>
+              <label>
+                Liên hệ
+                <input name="phone" type="tel" autocomplete="tel" required />
+              </label>
+              <label>
+                Diện tích
+                <input name="area" type="text" placeholder="Ví dụ: 85m2" />
+              </label>
+              <label>
+                Mức đầu tư
+                <input name="budget" type="text" placeholder="Ví dụ: 500 triệu" />
+              </label>
+            </div>
+            <label>
+              Nội dung
+              <textarea name="need" rows="4" required></textarea>
+            </label>
+            <button type="submit">Đăng ký</button>
+            <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="architect-section" id="news">
+        <div class="container">
+          <h2 class="reveal">Đội ngũ kiến trúc sư V-Concept</h2>
+          <div class="architect-track">
+            <article class="architect-card reveal">
+              <img src="/assets/architect.jpg" alt="Kiến trúc sư Hoàng Đức" />
+              <div>
+                <h3>KTS. Hoàng Đức</h3>
+                <p>Kiến trúc sư chủ trì</p>
+                <span>Kinh nghiệm 10 năm</span>
+                <span>Tốt nghiệp ĐH Kiến Trúc Hà Nội</span>
+                <span>Triển khai 50 dự án</span>
+              </div>
+            </article>
+            <article class="architect-card reveal">
+              <img src="/assets/architect.jpg" alt="Kiến trúc sư Hoàng Đức" />
+              <div>
+                <h3>KTS. Hoàng Đức</h3>
+                <p>Thiết kế nội thất</p>
+                <span>Kinh nghiệm 10 năm</span>
+                <span>Tốt nghiệp ĐH Kiến Trúc Hà Nội</span>
+                <span>Triển khai 50 dự án</span>
+              </div>
+            </article>
+            <article class="architect-card reveal">
+              <img src="/assets/architect.jpg" alt="Kiến trúc sư Hoàng Đức" />
+              <div>
+                <h3>KTS. Hoàng Đức</h3>
+                <p>Giám sát thi công</p>
+                <span>Kinh nghiệm 10 năm</span>
+                <span>Tốt nghiệp ĐH Kiến Trúc Hà Nội</span>
+                <span>Triển khai 50 dự án</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials-section">
+        <div class="container">
+          <h2 class="reveal"><span>Khách hàng nói gì về</span> V-Concept?</h2>
+          <div class="testimonial-grid">
+            <article class="testimonial-card reveal">
+              <div>
+                <img src="/assets/brand-avatar.png" alt="Chị Bích Loan" />
+                <p><strong>Chị Bích Loan</strong><span>Hoàng Mai, Hà Nội</span></p>
+              </div>
+              <blockquote>Đội ngũ rất chuyên nghiệp, tôi hài lòng với dịch vụ và chắc chắn sẽ giới thiệu bạn bè ủng hộ cho brand.</blockquote>
+            </article>
+            <article class="testimonial-card reveal">
+              <div>
+                <img src="/assets/brand-avatar.png" alt="Chị Bích Loan" />
+                <p><strong>Chị Bích Loan</strong><span>Hoàng Mai, Hà Nội</span></p>
+              </div>
+              <blockquote>Không gian sau bàn giao đúng tinh thần gia đình mong muốn, chi tiết hoàn thiện rất chỉn chu.</blockquote>
+            </article>
+            <article class="testimonial-card reveal">
+              <div>
+                <img src="/assets/brand-avatar.png" alt="Chị Bích Loan" />
+                <p><strong>Chị Bích Loan</strong><span>Hoàng Mai, Hà Nội</span></p>
+              </div>
+              <blockquote>Quy trình làm việc rõ ràng, đội thi công giữ tiến độ và phản hồi nhanh trong suốt dự án.</blockquote>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners-section">
+        <div class="container">
+          <h2 class="reveal">Đối tác tin cậy</h2>
+          <div class="partner-strip reveal">
+            <img src="/assets/logo-datxanh.png" alt="Đất Xanh Miền Bắc" />
+            <img src="/assets/logo-blum.svg" alt="Blum" />
+            <img src="/assets/logo-ecopark.png" alt="Ecopark" />
+            <img src="/assets/logo-ancuong.png" alt="An Cường" />
+            <img src="/assets/logo-haefele.png" alt="Hafele" />
+            <img src="/assets/logo-vinhomes.png" alt="Vinhomes" />
+            <img src="/assets/logo-ciputra.png" alt="Ciputra" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <a class="footer-brand" href="#top">
+          <span class="brand-symbol">V</span>
+          <span>
+            <strong>V-CONCEPT</strong>
+            <small>Interior architecture</small>
+          </span>
+        </a>
+
+        <nav aria-label="Điều hướng footer">
+          <a href="#top">Trang chủ</a>
+          <a href="#about">Về chúng tôi</a>
+          <a href="#process">Quy trình làm việc</a>
+          <a href="#projects">Dự án</a>
+          <a href="#news">Tin tức</a>
+        </nav>
+
+        <address>
+          <strong>Liên hệ</strong>
+          <a href="tel:+84366187368"><i data-lucide="phone" aria-hidden="true"></i>036 6187 368</a>
+          <a href="https://www.vconcept.vn"><i data-lucide="globe" aria-hidden="true"></i>www.vconcept.vn</a>
+          <a href="mailto:support.vconcept@gmail.com"><i data-lucide="mail" aria-hidden="true"></i>support.vconcept@gmail.com</a>
+          <span><i data-lucide="map-pin" aria-hidden="true"></i>Xưởng 1: Làng nghề gỗ Phúc Thọ, Hà Nội</span>
+          <span><i data-lucide="map-pin" aria-hidden="true"></i>Xưởng 2: Thôn Thượng, Phù Đổng, Gia Lâm, Hà Nội</span>
+        </address>
+
+        <div class="fanpage">
+          <strong>Fanpage</strong>
+          <div>
+            <img src="/assets/brand-avatar.png" alt="" />
+            <p>Kiến trúc nội thất Famila<span>36k người theo dõi</span></p>
+          </div>
+          <div class="social-row" aria-label="Mạng xã hội">
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Youtube"><i data-lucide="youtube" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Chat"><i data-lucide="message-circle" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="video-dialog" data-video-dialog>
+      <button type="button" aria-label="Đóng video" data-close-video><i data-lucide="x" aria-hidden="true"></i></button>
+      <img src="/assets/hero-living.jpg" alt="Video giới thiệu V-Concept" />
+    </dialog>
+  </body>
+</html>
