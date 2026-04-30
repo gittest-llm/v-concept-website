@@ -24,21 +24,14 @@ window.addEventListener("load", bootIcons);
 
 if (introLoader) {
   document.body.classList.add("intro-active");
-  window.addEventListener("load", () => {
-    window.setTimeout(() => {
-      introLoader.classList.add("is-exiting");
-    }, 3200);
-
-    window.setTimeout(() => {
-      introLoader.classList.add("is-hidden");
-      document.body.classList.remove("intro-active");
-    }, 4000);
-  });
   window.setTimeout(() => {
-    if (introLoader.classList.contains("is-hidden")) return;
-    introLoader.classList.add("is-exiting", "is-hidden");
+    introLoader.classList.add("is-exiting");
+  }, 900);
+
+  window.setTimeout(() => {
+    introLoader.classList.add("is-hidden");
     document.body.classList.remove("intro-active");
-  }, 8000);
+  }, 1180);
 }
 
 function syncHeader() {
